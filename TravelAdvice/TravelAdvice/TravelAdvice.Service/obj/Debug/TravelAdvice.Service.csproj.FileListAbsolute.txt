@@ -1,0 +1,90 @@
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.csprojResolveAssemblyReference.cache
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.dll.config
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.dll
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.pdb
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.dll
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\MySql.Data.dll
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\MySql.Data.Entity.EF6.dll
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Data.dll
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Domaine.dll
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.exe
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Data.pdb
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Domaine.pdb
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.pdb
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.xml
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.dll
+c:\users\esprit\documents\visual studio 2015\Projects\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.dll.config
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\MySql.Data.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Data.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Domaine.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.exe
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Data.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Domaine.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.xml
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.csprojResolveAssemblyReference.cache
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.dll.config
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\MySql.Data.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Data.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Domaine.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.exe
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Data.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Domaine.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.xml
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.csprojResolveAssemblyReference.cache
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.dll.config
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\MySql.Data.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Data.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Domaine.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.exe
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Data.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Domaine.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.xml
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.csprojResolveAssemblyReference.cache
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.pdb
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.dll.config
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.dll
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Service.pdb
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.dll
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.SqlServer.dll
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\MySql.Data.dll
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\MySql.Data.Entity.EF6.dll
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Data.dll
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Domaine.dll
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.exe
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Data.pdb
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.Domaine.pdb
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\TravelAdvice.pdb
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.xml
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\bin\Debug\EntityFramework.SqlServer.xml
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.csprojResolveAssemblyReference.cache
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.dll
+I:\slimpi\Projects\TravelAdvice\TravelAdvice\TravelAdviceyekhdimkolchay\TravelAdvice\TravelAdvice\TravelAdvice.Service\obj\Debug\TravelAdvice.Service.pdb

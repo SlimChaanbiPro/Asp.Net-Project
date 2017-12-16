@@ -1,0 +1,87 @@
+﻿<body onload="calcRoute();">
+    @model TravelAdvice.Web.Models.ReservationVolModels
+
+    @{
+        ViewBag.Title = "Details";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    <h2>Details Du Reservation</h2>
+
+    <div >
+
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                Date de reservation
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.date_reservation)
+            </dd>
+
+            <dt>
+                Date de depart
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.vole.date_depart)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.vole.depart)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.vole.depart)
+            </dd>
+
+
+            <dt>
+                @Html.DisplayNameFor(model => model.vole.destination)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.vole.destination)
+            </dd>
+            <dt>
+                Prix du ticket
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.vole.prix_unitaire)
+            </dd>
+
+        </dl>
+    </div>
+   
+   
+    </p>
+    <p>
+        <style>
+            #map-canvas {
+                height: 300px;
+                width: 50%;
+            }
+        </style>
+       <a href="@Url.Action("Export1","Reservation")">pdf</a>
+
+        @Html.ActionLink("Back to List", "Indexreservation")
+
+    <p>
+   
+      
+    
+    <input type="hidden" name="depart" value=@Model.vole.depart
+           id="start" required />
+    <input type="hidden" name="arrivee" value=@Model.vole.destination
+           id="end" required />
+    <div id="map-canvas"></div>
+    @section JavaScript
+                            {
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBdWeArK6DxPlOl8tFW9UVM4dRJ8EqjciE&exp&sensor=false&libraries=places" sensor="false"></script>
+
+        <script src="~/Scripts/map.js"></script>
+    }
+    
+</body>

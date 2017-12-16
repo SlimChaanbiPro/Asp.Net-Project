@@ -1,0 +1,239 @@
+﻿@model TravelAdvice.Domaine.Entity.vole
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+    h2 {
+        font-size: 50px;
+        color: orange;
+        position: center;
+    }
+
+    h4 {
+        font-size: 50px;
+        color: orange;
+        position: center;
+    }
+
+    div {
+        font-size: 15px;
+        color: black;
+    }
+
+
+
+    p {
+        font-size: 20px;
+        color: black;
+    }
+</style>
+<body>
+
+    <!-- \\ Begin Holder \\ -->
+    <div class="DesignHolder">
+        <!-- \\ Begin Frame \\ -->
+        <div class="LayoutFrame">
+            <!-- \\ Begin Header \\ -->
+           
+            <!-- // End Header // -->
+            <!-- \\ Begin Banner Section \\ -->
+            <div class="Banner_sec" id="home">
+                <!--  \\ Begin banner Side -->
+                <div class="bannerside">
+                    <div class="Center">
+                        <!--  \\ Begin Left Side -->
+                        <!--  // End Left Side // -->
+                        <h2>Edit</h2>
+
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-horizontal">
+                                <h4>Vole</h4>
+                                <hr />
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                @Html.HiddenFor(model => model.id)
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.depart, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.depart, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.depart, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.destination, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.destination, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.destination, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.nb_place, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.nb_place, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.nb_place, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.date_depart, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.date_depart, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.date_depart, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.date_arrive, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.date_arrive, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.date_arrive, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.prix_unitaire, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.prix_unitaire, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.prix_unitaire, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                
+
+                              
+                               
+
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <input type="submit" value="Save" class="btn btn-default" />
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                        <div>
+                            @Html.ActionLink("Back to List", "Index")
+                        </div>
+
+                        <!--  // End banner Side // -->
+                        <div class="clear"></div>
+                    </div>
+                    <!-- // End Banner Section // -->
+                    <div class="bgcolor"></div>
+                    <!-- \\ Begin Container \\ -->
+                    <div id="Container">
+                        <!-- \\ Begin About Section \\ -->
+                        <div class="About_sec" id="about">
+                            <div class="Center">
+                            
+
+                                <!-- \\ Begin Tab side \\ -->
+                                <div class="Tabside">
+                                   s="clear"></div>
+                                    <div class="tabcontent" id="cont-1-1">
+                                        <div class="TabImage">
+                                            <div class="img1">
+                                              
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tabcontent hide" id="cont-2-1">
+                                       
+                                    </div>
+                                    <!-- // End About Section // -->
+                                    <!-- \\ Begin Services Section \\ -->
+                                    <div class="Services_sec" id="services">
+                                        <div class="Center">
+                                           
+                                            <div class="Line"></div>
+                                            <!-- \\ Begin Services Side  \\ -->
+                                            
+                                            <!-- // End Services Side // -->
+                                        </div>
+                                    </div>
+                                    <!-- // End Services Section // -->
+                                    <!-- \\ Begin Pricing Section \\ -->
+                                    <!-- // End Pricing Side // -->
+                                </div>
+                            </div>
+                            <!-- // End Pricing Section // -->
+                            <!-- \\ Begin Contact Section \\ -->
+                            <div class="Contact_sec" id="contact">
+                                <div class="Contactside">
+                                    <div class="Center">
+                                        <h2>contact us</h2>
+
+                                        <div class="Line"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="Map">
+
+                                    <div id="GoogleMap"></div>
+
+                                </div>
+
+                                <!-- \\ Begin Get Section \\ -->
+                                <div class="Get_sec">
+                                    <div class="Mid">
+                                        <!-- \\ Begin Left Side \\ -->
+                                        <div class="Leftside">
+                                            <form action="#">
+                                                <fieldset>
+                                                    <p><input type="text" value="" placeholder="NAME" class="field"></p>
+                                                    <p><input type="email" value="" placeholder="EMAIL" class="field"></p>
+                                                    <p><input type="text" value="" placeholder="TITLE" class="field"></p>
+                                                    <p><textarea cols="2" rows="2" placeholder="MESSAGE"></textarea></p>
+                                                    <p><input type="submit" value="send" class="button"></p>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <!-- // End Left Side // -->
+                                        <!-- \\ Begin Right Side \\ -->
+                                        <div class="Rightside">
+                                            <h3>Get in touch !</h3>
+                                            <address>
+                                            </address>
+                                            <address class="Number">
+                                                Esprit.tn<br>TRa velAdvice.com
+                                            </address>
+                                            <div class="clear"></div>
+                                            <ul></ul>
+                                        </div>
+                                        <!-- // End Right Side // -->
+                                    </div>
+                                    <!-- \\ Begin Footer \\-->
+                                    
+                                    <!-- // End Footer // -->
+                                </div>
+                                <!-- // End Get Section // -->
+
+                            </div>
+                            <!-- // End Contact Section // -->
+                        </div>
+                        <!-- // End Container // -->
+                    </div>
+                    <!-- // End Layout Frame // -->
+                </div>
+                <!-- // End Design Holder // -->
+                <div id="loader-wrapper">
+                    <div id="loader"></div>
+
+                    <div class="loader-section section-left"></div>
+                    <div class="loader-section section-right"></div>
+
+                </div>
+
+                <!-- <<Attched Javascripts>> -->
+                <script type="text/javascript" src="@Url.Content("~/Content/js/jquery-1.11.0.min.js")"></script>
+                <script type="text/javascript" src="@Url.Content("~/Content/js/jquery.sudoSlider.min.js")"></script>
+                <script type="text/javascript" src="@Url.Content("~/Content/js/global.js")"></script>
+                <script type="text/javascript" src="@Url.Content("~/Content/js/modernizr.js")"></script>
+</body>

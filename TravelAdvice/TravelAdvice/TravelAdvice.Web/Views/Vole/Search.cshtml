@@ -1,0 +1,65 @@
+﻿@model IEnumerable<TravelAdvice.Domaine.Entity.vole>
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.date_arrive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date_depart)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.depart)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.destination)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nb_place)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prix_unitaire)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.date_arrive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date_depart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.depart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.destination)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nb_place)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prix_unitaire)
+        </td>
+        <td>
+            @Html.ActionLink("Reserver", "Reserver", new { id = item.id }) |
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,59 @@
+﻿@model PagedList.IPagedList<TravelAdvice.Domaine.Entity.reservationvole>
+@using PagedList.Mvc;
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Indexreservation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Indexreservation</h2>
+<a href="@Url.Action("ExportPDF","Reservation")">pdf</a>
+
+<p>
+    @Html.ActionLink("voir les Prochaine vole", "Search")
+</p>
+<table class="table">
+    
+    <tr>
+        <th>
+            Date de reservation
+        </th>
+
+        <th>
+            Date de depart 
+        </th>
+        <th>
+            Votre Destination
+        </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+<tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.date_reservation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vole.date_depart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vole.destination)
+        </td>
+       
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })|
+
+            
+        </td>
+    </tr>
+}
+  
+</table>
+  Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Indexreservation", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+<h4>nombre de resrvation</h4>
+<h4>@ViewBag.nbrereservation</h4>

@@ -1,0 +1,122 @@
+﻿@RenderSection("JavaScript", required: false)
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="@Url.Content("~/Content/")css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="@Url.Content("~/Content/")js/jquery-1.11.0.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="@Url.Content("~/Content/")css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,600italic,400italic,800,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src="@Url.Content("~/Content/")js/menu_jquery.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+ 
+           <!--banner start here-->
+    <div class="banner-two">
+        <div class="header">
+            <div class="container">
+                <div class="header-main">
+                    <div class="logo">
+                        <h1><a href="/Vole/Index">Travel Advice</a></h1>
+                    </div>
+                    <div class="header-right">
+                        <div class="head-top">
+                            <div class="top-nav-right">
+                                <div id="loginContainer">
+                                    <a href="#" id="loginButton"><span>Login</span></a>
+                                    <div id="loginBox">
+                                        <form id="loginForm">
+                                            <fieldset id="body">
+                                                <fieldset>
+                                                    <label for="email">Email Address</label>
+                                                    <input type="text" id="email">
+                                                </fieldset>
+                                                <fieldset>
+                                                    <label for="password">Password</label>
+                                                    <input type="password" id="password">
+                                                </fieldset>
+                                                <input type="submit" id="login" value="Sign in">
+                                                <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+                                            </fieldset>
+                                            <span><a href="#">Forgot your password?</a></span>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div> 
+                        </div>
+                           
+                        <div class="top-nav">
+                            <span class="menu"> <img src="@Url.Content("~/Content/")images/travel-scams.jpg" alt="" /></span>
+                            <ul class="res">
+                                <li><a href="/Vole/Index" class="active hvr-sweep-to-bottom">Home</a></li>
+                                <li><a class="hvr-sweep-to-bottom" href="/Reservation/Indexreservation">Mes reservation</a></li>
+                                <li><a class="hvr-sweep-to-bottom" href="/Reservation/Search">voir les prochaine Voles</a></li>
+                                <li><a class="hvr-sweep-to-bottom" href="/Vole/Index">Offers</a></li>
+                                <li><a class="hvr-sweep-to-bottom" href="">Evennement</a></li> </ul>
+                            <div class="clearfix"> </div>
+                            <!-- script-for-menu -->
+                            <script>
+						   $( "span.menu" ).click(function() {
+							 $( "ul.res" ).slideToggle( 300, function() {
+							 // Animation complete.
+							  });
+							 });
+                            </script>
+                            <!-- /script-for-menu -->
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--banner start here-->
+  
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+    @section scripts {
+        <script type="text/javascript">
+  $(function () {
+    $('#AnnualMeetingDate').datetimepicker({
+      defaultDate: '@Model.AnnualMeetingDate',
+      format: 'L',
+      showClose: true,
+      showClear: true,
+      toolbarPlacement: 'top'
+    });
+    $('#AnnualMeetingStartTime').datetimepicker({
+      defaultDate: '@Model.AnnualMeetingStartTime',
+      format: 'LT',
+      showClose: true,
+      showClear: true,
+      toolbarPlacement: 'top',
+      stepping: 15
+    });
+  });
+        </script>
+    }
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/datetime")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

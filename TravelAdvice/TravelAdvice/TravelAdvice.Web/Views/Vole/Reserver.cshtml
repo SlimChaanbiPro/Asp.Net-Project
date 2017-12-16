@@ -1,0 +1,59 @@
+﻿@model IEnumerable<TravelAdvice.Domaine.Entity.reservationvole>
+
+@{
+    ViewBag.Title = "Reserver";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Reserver</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.date_reservation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.users_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vole_id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.date_reservation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.users_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vole.depart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vole.destination)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vole.date_arrive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vole.date_depart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vole.prix_unitaire)
+        </td>
+        <td>
+          
+            @Html.ActionLink("DetailsReservation", "DetailsReservation", new { id=item.id }) |
+            @Html.ActionLink("AnnulerReservation", "AnnulerReservation", new { id=item.id})
+        </td>
+    </tr>
+}
+
+</table>

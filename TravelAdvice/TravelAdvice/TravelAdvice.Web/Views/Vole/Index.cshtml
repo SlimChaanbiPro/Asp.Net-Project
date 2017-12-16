@@ -1,0 +1,315 @@
+﻿
+@model PagedList.IPagedList<TravelAdvice.Domaine.Entity.vole>
+@using PagedList.Mvc;
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "vole";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+    h2 {
+        font-size: 50px;
+        color: orange;
+        position: center;
+    }
+
+    td {
+        font-size: 20px;
+        color: black;
+        padding-right: 20px;
+    }
+
+    th {
+        font-size: 20px;
+        color: orange;
+        padding-right: 20px;
+    }
+
+    p {
+        font-size: 20px;
+        color: black;
+        padding-right: 10px;
+    }
+</style>
+
+<body>
+
+    <!-- \\ Begin Holder \\ -->
+    <div class="DesignHolder">
+        <!-- \\ Begin Frame \\ -->
+        <div class="LayoutFrame">
+            <!-- \\ Begin Header \\ -->
+          
+            <!-- // End Header // -->
+            <!-- \\ Begin Banner Section \\ -->
+            <div class="Banner_sec" id="home">
+                <span class="menu"> <img src="@Url.Content("~/Content/")images/t.jpg" alt="" /></span>
+                <!--  \\ Begin banner Side -->
+                <div class="bannerside">
+                    <div class="Center">
+                        <!--  \\ Begin Left Side -->
+                        <!--  // End Left Side // -->
+
+
+
+
+                        <h2>Voles</h2>
+
+                        <p>
+                            @Html.ActionLink("Create New", "Create")
+                        </p>
+
+                        @using (Html.BeginForm("Index", "vole", FormMethod.Get))
+                        {
+                            <p>
+                                rechercher Vole: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+                                <input type="submit" value="Search" size="30" />
+                            </p>
+                        }
+                        <!-- // End Navigation // -->
+                        <table class="table">
+                            <tr>
+                                <th>
+                                    depart
+                                </th>
+
+                                <th>
+                                    destination
+                                </th>
+
+                                <th>
+                                    nb_place
+
+                                </th>
+
+                                <th>
+                                    Date_depart
+                                </th>
+
+                                <th>
+                                    date_arrive
+                                </th>
+
+                                <th>
+
+                                <th>
+                                    prix
+                                </th>
+                                <th>
+
+                                </th>
+                                <th>
+
+                                </th>
+
+
+
+                                <th>
+
+                                </th>
+                                <th>
+
+                                </th>
+
+
+
+                            </tr>
+                            <tr> </tr>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.depart)
+                                    </td>
+
+
+
+
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.destination)
+                                    </td>
+
+
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.nb_place)
+                                    </td>
+
+
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.date_depart)
+                                    </td>
+
+
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.date_arrive)
+                                    </td>
+
+
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.prix_unitaire)
+                                    </td>
+
+                                    <td></td>
+                                    <td></td>
+
+
+
+
+                                    <td></td>
+                                    <td></td>
+
+                                    <td>
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                                        @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                                        @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                                    </td>
+                                </tr>
+                            }
+
+                        </table>
+
+
+                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+                        <style type="text/css">
+                            <div id="map-canvas" > </div >
+                        </style>
+                        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+                        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+                        <script src="~/Scripts/map.js"></script>
+                        <br />
+                        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+                        @Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+
+
+
+                        <!--  // End banner Side // -->
+                        <div class="clear"></div>
+                    </div>
+                    <!-- // End Banner Section // -->
+                    <div class="bgcolor"></div>
+                    <!-- \\ Begin Container \\ -->
+                    <div id="Container">
+                        <!-- \\ Begin About Section \\ -->
+                        <div class="About_sec" id="about">
+                            <div class="Center">
+                                
+
+                                <!-- \\ Begin Tab side \\ -->
+                                <div class="Tabside">
+                                  
+                                    <div class="clear"></div>
+                                    <div class="tabcontent" id="cont-1-1">
+                                        <div class="TabImage">
+                                          
+                                        </div>
+
+                                    </div>
+                                    <div class="tabcontent hide" id="cont-2-1">
+                                       
+                                    </div>
+                                    <!-- // End About Section // -->
+                                    <!-- \\ Begin Services Section \\ -->
+                                    <div class="Services_sec" id="services">
+                                        <div class="Center">
+                                          
+                                            <div class="Line"></div>
+                                            <!-- \\ Begin Services Side  \\ -->
+                                           
+                                            <!-- // End Services Side // -->
+                                        </div>
+                                    </div>
+                                    <!-- // End Services Section // -->
+                                    <!-- \\ Begin Pricing Section \\ -->
+                                    <!-- // End Pricing Side // -->
+                                </div>
+                            </div>
+                            <!-- // End Pricing Section // -->
+                            <!-- \\ Begin Contact Section \\ -->
+                            <div class="Contact_sec" id="contact">
+                                <div class="Contactside">
+                                    <div class="Center">
+                                        <h2>contact us</h2>
+
+                                        <div class="Line"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="Map">
+
+                                    <div id="GoogleMap"></div>
+
+                                </div>
+
+                                <!-- \\ Begin Get Section \\ -->
+                                <div class="Get_sec">
+                                    <div class="Mid">
+                                        <!-- \\ Begin Left Side \\ -->
+                                        <div class="Leftside" style="margin-right">
+                                            <form action="#">
+                                                <fieldset>
+                                                    <p><input type="text" value="" placeholder="NAME" class="field"></p>
+                                                    <p><input type="email" value="" placeholder="EMAIL" class="field"></p>
+                                                    <p><input type="text" value="" placeholder="TITLE" class="field"></p>
+                                                    <p><textarea cols="2" rows="2" placeholder="MESSAGE"></textarea></p>
+                                                    <p><input type="submit" value="send" class="button"></p>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <!-- // End Left Side // -->
+                                        <!-- \\ Begin Right Side \\ -->
+                                        <div class="Rightside">
+                                            <h3>Get in touch !</h3>
+                                            <address>
+                                            </address>
+                                            <address class="Number">
+                                                Esprit.tn<br>TravelAdvice.com
+                                            </address>
+                                            <div class="clear"></div>
+                                            <ul></ul>
+                                        </div>
+                                        <!-- // End Right Side // -->
+                                    </div>
+                                    <!-- \\ Begin Footer \\-->
+                                    <footer>
+                                        <div class="Cntr">
+                                            <p>COPYRIGHT © 2084 COMPANY NAME. DESIGN: <a rel="nofollow" href="http://www.templatemo.com" target="_parent">TEMPLATEMO</a></p>
+                                        </div>
+                                    </footer>
+                                    <!-- // End Footer // -->
+                                </div>
+                                <!-- // End Get Section // -->
+
+                            </div>
+                            <!-- // End Contact Section // -->
+                        </div>
+                        <!-- // End Container // -->
+                    </div>
+                    <!-- // End Layout Frame // -->
+                </div>
+                <!-- // End Design Holder // -->
+                <div id="loader-wrapper">
+                    <div id="loader"></div>
+
+                    <div class="loader-section section-left"></div>
+                    <div class="loader-section section-right"></div>
+
+                </div>
+
+                <!-- <<Attched Javascripts>> -->
+                <script type="text/javascript" src="@Url.Content("~/Content/js/jquery-1.11.0.min.js")"></script>
+                <script type="text/javascript" src="@Url.Content("~/Content/js/jquery.sudoSlider.min.js")"></script>
+                <script type="text/javascript" src="@Url.Content("~/Content/js/global.js")"></script>
+                <script type="text/javascript" src="@Url.Content("~/Content/js/modernizr.js")"></script>
+</body>                     

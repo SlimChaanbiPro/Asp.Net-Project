@@ -1,0 +1,255 @@
+﻿<body onload="calcRoute();">
+    @model TravelAdvice.Web.Models.VoleModels
+
+    @{
+        ViewBag.Title = "Details";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+
+    <style type="text/css">
+        h2 {
+            font-size: 50px;
+            color: orange;
+            position: center;
+        }
+
+        h4 {
+            font-size: 50px;
+            color: orange;
+            position: center;
+        }
+        dt {
+            font-size:20 px;
+            color: orange;
+            
+        }
+
+        dd {
+            font-size: 15px;
+            color: black;
+        }
+        div {
+            font-size: 15px;
+            color: black;
+        }
+
+
+
+        p {
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+    <body>
+
+        <!-- \\ Begin Holder \\ -->
+        <div class="DesignHolder">
+            <!-- \\ Begin Frame \\ -->
+            <div class="LayoutFrame">
+                <!-- \\ Begin Header \\ -->
+                
+                <!-- // End Header // -->
+                <!-- \\ Begin Banner Section \\ -->
+                <div class="Banner_sec" id="home">
+                    <!--  \\ Begin banner Side -->
+                    <div class="bannerside">
+                        <div class="Center">
+                            <!--  \\ Begin Left Side -->
+                            <!--  // End Left Side // -->
+                            <h2>Details</h2>
+                            <h4>Vole</h4>
+                            <div>
+                                
+                                <hr />
+                                <dl class="dl-horizontal">
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.depart)
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.depart)
+                                    </dd>
+
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.nb_place)
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.nb_place)
+                                    </dd>
+
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.date_depart)
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.date_depart))
+                                    </dd>
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.date_arrive)
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.date_arrive)
+                                    </dd>
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.prix_unitaire)
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.prix_unitaire)
+                                    </dd>
+
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.destination)
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.destination)
+                                    </dd>
+
+                                   
+
+                                </dl>
+                            </div>
+                            <p>
+                                <style>
+                                    #map-canvas {
+                                        height: 300px;
+                                        width: 50%;
+                                    }
+                                </style>
+                                @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+                                @Html.ActionLink("Back to List", "Index")|
+                            <p>
+                                @Html.ActionLink("Statistique par resrvation", "StatTypeVole", new { id = Model.id })
+                            </p>
+                            </p>
+
+                            <input type="hidden" name="depart" value=@Model.depart
+                                   id="start" required />
+                            <input type="hidden" name="arrivee" value=@Model.destination
+                                   id="end" required />
+                            <div id="map-canvas"></div>
+                            @section JavaScript
+                            {
+                                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+                                <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBdWeArK6DxPlOl8tFW9UVM4dRJ8EqjciE&exp&sensor=false&libraries=places" sensor="false"></script>
+
+                                <script src="~/Scripts/map.js"></script>
+                            }
+                        </div>
+                       
+                    <!-- // End Banner Section // -->
+                    <div class="bgcolor"></div>
+                    <!-- \\ Begin Container \\ -->
+                    <div id="Container">
+                        <!-- \\ Begin About Section \\ -->
+                        <div class="About_sec" id="about">
+                            <div class="Center">
+                              
+
+                                <!-- \\ Begin Tab side \\ -->
+                                <div class="Tabside">
+                                   
+                                    <div class="clear"></div>
+                                 
+                                    <div class="tabcontent hide" id="cont-2-1">
+                                        
+                                    </div>
+                                    <!-- // End About Section // -->
+                                    <!-- \\ Begin Services Section \\ -->
+                                    <div class="Services_sec" id="services">
+                                        <div class="Center">
+                                            <h2>Voles</h2>
+                                            <div class="Line"></div>
+                                            <!-- \\ Begin Services Side  \\ -->
+                                           
+                                            <!-- // End Services Side // -->
+                                        </div>
+                                    </div>
+                                    <!-- // End Services Section // -->
+                                    <!-- \\ Begin Pricing Section \\ -->
+                                    <!-- // End Pricing Side // -->
+                                </div>
+                            </div>
+                            <!-- // End Pricing Section // -->
+                            <!-- \\ Begin Contact Section \\ -->
+                            <div class="Contact_sec" id="contact">
+                                <div class="Contactside">
+                                    <div class="Center">
+                                        <h2>contact us</h2>
+
+                                        <div class="Line"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="Map">
+
+                                    <div id="GoogleMap"></div>
+
+                                </div>
+
+                                <!-- \\ Begin Get Section \\ -->
+                                <div class="Get_sec">
+                                    <div class="Mid">
+                                        <!-- \\ Begin Left Side \\ -->
+                                        <div class="Leftside" style="marker-mid">
+                                            <form action="#">
+                                                <fieldset>
+                                                    <p><input type="text" value="" placeholder="NAME" class="field"></p>
+                                                    <p><input type="email" value="" placeholder="EMAIL" class="field"></p>
+                                                    <p><input type="text" value="" placeholder="TITLE" class="field"></p>
+                                                    <p><textarea cols="2" rows="2" placeholder="MESSAGE"></textarea></p>
+                                                    <p><input type="submit" value="send" class="button"></p>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <!-- // End Left Side // -->
+                                        <!-- \\ Begin Right Side \\ -->
+                                        <div class="Rightside">
+                                            <h3>Get in touch !</h3>
+                                            <address>
+                                            </address>
+                                            <address class="Number">
+                                                Esprit.tn<br>TravelAdvice.com
+                                            </address>
+                                            <div class="clear"></div>
+                                            <ul></ul>
+                                        </div>
+                                        <!-- // End Right Side // -->
+                                    </div>
+                                    <!-- \\ Begin Footer \\-->
+                                    <footer>
+                                        <div class="Cntr">
+                                            <p>COPYRIGHT © 2084 COMPANY NAME. DESIGN: <a rel="nofollow" href="http://www.templatemo.com" target="_parent">TEMPLATEMO</a></p>
+                                        </div>
+                                    </footer>
+                                    <!-- // End Footer // -->
+                                </div>
+                                <!-- // End Get Section // -->
+
+                            </div>
+                            <!-- // End Contact Section // -->
+                        </div>
+                        <!-- // End Container // -->
+                    </div>
+                    <!-- // End Layout Frame // -->
+                </div>
+                <!-- // End Design Holder // -->
+                <div id="loader-wrapper">
+                    <div id="loader"></div>
+
+                    <div class="loader-section section-left"></div>
+                    <div class="loader-section section-right"></div>
+
+                </div>
+
+                <!-- <<Attched Javascripts>> -->
+                <script type="text/javascript" src="@Url.Content("~/Content/js/jquery-1.11.0.min.js")"></script>
+                <script type="text/javascript" src="@Url.Content("~/Content/js/jquery.sudoSlider.min.js")"></script>
+                <script type="text/javascript" src="@Url.Content("~/Content/js/global.js")"></script>
+                <script type="text/javascript" src="@Url.Content("~/Content/js/modernizr.js")"></script>
+    </body>
